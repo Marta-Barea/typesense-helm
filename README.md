@@ -27,12 +27,12 @@ This Helm chart deploys [Typesense](https://typesense.org/), an open-source, fas
 
 ## 🚀 Installation
 
-To add the Springboard repository and install the chart with the release name `my-release`, run:
+To add the Typesense repository and install the chart with the release name `my-release`, run:
 
-\```bash
+```bash
 $ helm repo add springboard https://marta-barea.github.io/typesense-helm/
 $ helm install my-release typesense/typesense -n [namespace]
-\```
+```
 
 ---
 
