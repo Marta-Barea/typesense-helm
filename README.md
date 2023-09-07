@@ -6,15 +6,7 @@ This Helm chart deploys [Typesense](https://typesense.org/), an open-source, fas
 
 - 🌐 [Official Website](https://typesense.org/)
 - 💡 [GitHub Repository](https://github.com/typesense/typesense)
-
-## 📝 Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [StatefulSet Configuration](#statefulset-configuration)
-- [Service Configuration](#service-configuration)
-
+- 
 ---
 
 ## 🛠 Prerequisites
