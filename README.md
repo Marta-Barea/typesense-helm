@@ -65,10 +65,3 @@ $ helm install my-release typesense/typesense -n [namespace]
 
 - **Service Type**: Configurable (`ClusterIP` by default)
 - **Service Port**: Configurable (80 by default)
-
----
-
-## 🙏 Contribute
-
-If you find this project helpful, please consider starring it on GitHub!
-
