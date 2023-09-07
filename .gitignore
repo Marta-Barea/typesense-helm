@@ -1,7 +1,3 @@
-# Helm
-*.tgz
-*.lock
-
 # Kubernetes temp files
 temp.yaml
 
