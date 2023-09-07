@@ -1,0 +1,24 @@
+# Ignore Helm chart backup files
+*.bak
+
+# Ignore any tests
+tests/
+
+# Ignore specific YAML files that are not part of the chart
+# *.yaml
+
+# Ignore any secrets
+secrets.yaml
+
+# Ignore the .git directory
+.git/
+.gitignore
+
+# Ignore temporary files
+*.swp
+*.tmp
+*.temp
+
+# Ignore IDE specific folders
+.idea/
+.vscode/

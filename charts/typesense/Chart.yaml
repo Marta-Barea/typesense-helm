@@ -1,0 +1,10 @@
+apiVersion: v2
+name: typesense
+version: 0.25.0
+description: Typesense is an open-source search engine optimized for speed and typo-tolerance, delivering fast and relevant search results.
+keywords:
+  - search
+home: https://typesense.org/
+sources:
+  - https://github.com/typesense/typesense
+icon: https://typesense.org/assets/images/typesense_medium.png

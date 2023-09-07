@@ -1,0 +1,17 @@
+# Helm
+*.tgz
+*.lock
+
+# Kubernetes temp files
+temp.yaml
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+*.swp
+
+# Ignore Helm dependency directories
+charts/*.tgz
