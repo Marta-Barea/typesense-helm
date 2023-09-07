@@ -12,6 +12,3 @@ temp.yaml
 # OS files
 .DS_Store
 *.swp
-
-# Ignore Helm dependency directories
-charts/*.tgz
