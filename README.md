@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This Helm chart deploys [Typesense](https://typesense.org/), an open-source, fast, and typo-tolerant search engine, onto a Kubernetes cluster.
+This Helm chart deploys [Typesense](https://typesense.org/), an open-source, fast, and typo-tolerant search engine, onto a Kubernetes cluster. The source code is based on [Spittal/typesense-helm](https://github.com/Spittal/typesense-helm).
 
 - 🌐 [Official Website](https://typesense.org/)
 - 💡 [GitHub Repository](https://github.com/typesense/typesense)
@@ -22,7 +22,7 @@ This Helm chart deploys [Typesense](https://typesense.org/), an open-source, fas
 To add the Typesense repository and install the chart with the release name `my-release`, run:
 
 ```bash
-$ helm repo add springboard https://marta-barea.github.io/typesense-helm/
+$ helm repo add typesense https://marta-barea.github.io/typesense-helm/
 $ helm install my-release typesense/typesense -n [namespace]
 ```
 
