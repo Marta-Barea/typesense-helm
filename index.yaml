@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   typesense:
   - apiVersion: v2
-    created: "2023-09-07T10:23:08.191690034Z"
+    created: "2023-09-19T11:02:29.334177731Z"
     description: Typesense is an open-source search engine optimized for speed and
       typo-tolerance, delivering fast and relevant search results.
-    digest: f0c5c82b401f464f9103a7b7b0c2fd2cfdb944a9d7f4e71a208a21d45d9ebbde
+    digest: 0abfd33aa027c0f74c6de721c1fb515d6f0dd1f15dabc7dc20bacf705a7182b3
     home: https://typesense.org/
     icon: https://typesense.org/assets/images/typesense_medium.png
     keywords:
@@ -16,4 +16,4 @@ entries:
     urls:
     - https://Marta-Barea.github.io/typesense-helm/typesense-1.0.4.tgz
     version: 1.0.4
-generated: "2023-09-07T10:23:08.19107982Z"
+generated: "2023-09-19T11:02:29.333383727Z"
