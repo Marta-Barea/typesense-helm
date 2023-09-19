@@ -13,15 +13,6 @@ spec:
     metadata:
       labels: {{- include "typesense.labels" . | nindent 8 }}
     spec:
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-              - matchExpressions:
-                - key: "topology.kubernetes.io/zone"
-                  operator: In
-                  values:
-                    - eu-west-1c
       volumes:
         - name: config-nodes
           configMap:
@@ -52,6 +43,7 @@ spec:
             - "{{ .Values.applicationPort }}"
             - --nodes
             - /etc/typesense/nodes/nodes
+            - --reset-peers-on-error
           livenessProbe:
               httpGet:
                 path: /health
@@ -71,4 +63,4 @@ spec:
         accessModes: [ "ReadWriteOnce" ]
         resources:
           requests:
-            storage: 25Gi  
+            storage: 25Gi
