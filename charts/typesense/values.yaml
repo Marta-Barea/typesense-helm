@@ -43,3 +43,7 @@ ingress:
       annotations: {}
 
 apiKey: "xyz"
+
+pdb:
+  enabled: true
+  minAvailable: 1

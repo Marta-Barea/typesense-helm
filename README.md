@@ -1,4 +1,4 @@
-# 🌐 Typesense Helm Chart
+# Typesense Helm Chart
 
 ## 📌 Overview
 
@@ -47,6 +47,10 @@ $ helm install my-release typesense/typesense -n [namespace]
 - **Access Mode**: `ReadWriteOnce`
 - **Size**: `25Gi`
 
+### 💼 Pod Disruption Budget
+
+- **Min Available**: Set by default to `1`
+- **Enabled**:  Set by default to `true`
 ---
 
 ## 🗄 StatefulSet Configuration
