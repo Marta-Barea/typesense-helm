@@ -7,5 +7,5 @@ spec:
   minAvailable: {{ .Values.pdb.minAvailable }}
   selector:
     matchLabels:
-      {{- include "typesense.selectorLabels" . | nindent 4 }}
+      {{- include "typesense.labels" . | nindent 8 }}
 {{- end }}
