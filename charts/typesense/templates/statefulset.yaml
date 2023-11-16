@@ -24,6 +24,8 @@ spec:
         - name: typesense
           image: {{ template "typesense.image" . }}
           imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
           env:
             - name: TYPESENSE_DATA_DIR
               value: {{ .Values.persistence.path }}
