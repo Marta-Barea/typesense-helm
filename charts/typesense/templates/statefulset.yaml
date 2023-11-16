@@ -8,7 +8,7 @@ spec:
     matchLabels: {{- include "typesense.matchLabels" . | nindent 6 }}
   replicas: {{ .Values.replicas }}
   podManagementPolicy: Parallel
-  serviceName: {{ template "typesense.fullname" . }}
+  serviceName: {{ template "typesense.fullname" . }}-cluster
   template:
     metadata:
       labels: {{- include "typesense.labels" . | nindent 8 }}
@@ -44,11 +44,20 @@ spec:
             - --nodes
             - /etc/typesense/nodes/nodes
             - --reset-peers-on-error
+            - --healthy-read-lag
+            - '3600'
           livenessProbe:
               httpGet:
                 path: /health
                 port: http
               initialDelaySeconds: 120 
+              timeoutSeconds: 5
+              failureThreshold: 6
+          readinessProbe:
+              httpGet:
+                path: /health
+                port: http
+              initialDelaySeconds: 30
               timeoutSeconds: 5
               failureThreshold: 6
           volumeMounts:

@@ -119,6 +119,6 @@ Usage:
 {{- $replicaCount := int $.Values.replicas -}}
 {{- $replicaString := "" -}}
 {{- range $i := until $replicaCount }}
-  {{- if $i }},{{- end }}{{ template "typesense.fullname" $ }}-{{ $i }}.{{ template "typesense.fullname" $ }}:8107:8108
+  {{- if $i }},{{- end }}{{ template "typesense.fullname" $ }}-{{ $i }}.{{ template "typesense.fullname" $ }}-cluster:8107:8108
 {{- end -}}
 {{- end -}}
