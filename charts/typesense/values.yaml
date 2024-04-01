@@ -36,11 +36,11 @@ service:
 ingress:
   enabled: false
   hosts:
-    - name: typesense.local
-      tls: false
-      certManager: false
-      tlsSecret: typesense.local-tls
-      annotations: {}
+  - name: typesense.local
+    tls: false
+    certManager: false
+    tlsSecret: typesense.local-tls
+    annotations: {}
 
 apiKey: "xyz"
 
