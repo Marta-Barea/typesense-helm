@@ -44,7 +44,7 @@ spec:
             - {{ .Values.apiKey }}
             - --listen-port
             - "{{ .Values.applicationPort }}"
-            {{- if ne .Values.replicas 1 }}
+            {{- if ne (toString .Values.replicas) "1" }}
             - --nodes
             - /etc/typesense/nodes/nodes
             - --reset-peers-on-error
