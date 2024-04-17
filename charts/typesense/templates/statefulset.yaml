@@ -37,7 +37,7 @@ spec:
               containerPort: {{ .Values.applicationPort }}
             - name: peering
               containerPort: {{ .Values.peeringPort }}
-            args:
+          args:
             - --data-dir
             - /data
             - --api-key
