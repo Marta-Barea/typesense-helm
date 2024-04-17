@@ -37,18 +37,20 @@ spec:
               containerPort: {{ .Values.applicationPort }}
             - name: peering
               containerPort: {{ .Values.peeringPort }}
-          args:
+            args:
             - --data-dir
             - /data
             - --api-key
             - {{ .Values.apiKey }}
             - --listen-port
             - "{{ .Values.applicationPort }}"
+            {{- if ne .Values.replicas 1 }}
             - --nodes
             - /etc/typesense/nodes/nodes
             - --reset-peers-on-error
             - --healthy-read-lag
             - '3600'
+            {{- end }}
           livenessProbe:
               httpGet:
                 path: /health
